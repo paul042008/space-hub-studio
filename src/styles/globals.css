@@ -1,0 +1,11 @@
+:root {
+    --background: #F5F0E8;  /* beige */
+    --primary: #4A3728;     /* dark brown */
+    --secondary: #7B5B3E;   /* chocolate */
+    --accent: #C49A6C;      /* warm caramel */
+    --border: #E2D5C0;      /* light tan */
+    --beige-light: #FEF9F0;
+  }
+  
+  /* Optional: Tailwind can use these with bg-[var(--background)] etc. */
+  

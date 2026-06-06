@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway  # This connects to Netlify's authentication
+  branch: main       # The branch where changes will be committed
+
+local_backend: true  # Allows you to test the CMS locally
+
+media_folder: "public/images/portfolio" # Where to save uploaded images
+public_folder: "/images/portfolio"      # How to reference images in the data
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio Items"
+    folder: "src/data/portfolio-items" # Folder for JSON/Markdown files
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Corporate", "Events", "Brand", "Weddings", "Studio Portraits"]}
+      - {label: "Image", name: "imageUrl", widget: "image"}
