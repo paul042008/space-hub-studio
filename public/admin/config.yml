@@ -1,7 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: paul042008/space-hub-studio    # <-- YOUR GitHub repo
   branch: main
+  base_url: https://space-hub-studio.vercel.app   # <-- YOUR live site URL
 
+# Where uploaded images will be stored (relative to project root)
 media_folder: "public/images/portfolio"
 public_folder: "/images/portfolio"
 
@@ -12,6 +15,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Category", name: "category", widget: "select", options: ["Corporate", "Events", "Brand", "Weddings", "Studio Portraits"]}
-      - {label: "Image", name: "imageUrl", widget: "image"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["Corporate", "Events", "Brand", "Weddings", "Studio Portraits"] }
+      - { label: "Image", name: "imageUrl", widget: "image" }
