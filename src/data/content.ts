@@ -82,11 +82,17 @@ export const content: Content = {
     imageUrl: "https://images.unsplash.com/photo-1628657485319-5865d0f2791d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
 
+  logo: {
+    url: "/images/logo.jpg",   // adjust path to match where you put the logo
+    alt: "Space Hub Studio"
+  },
+
+
   contact: {
     title: "Let’s Create Something Beautiful",
     subtitle: "Reach out for collaborations, commissions, or just a creative chat.",
-    email: "dralstonkreBive@gmail.com",
-    phone: "+250 787 763 855",
+    email: "Your Email",
+    phone: "+250 793 837 472",
     linktree: "linktr.ee/DRALSTON",
     linktreeUrl: "https://linktr.ee/DRALSTON"
   },
